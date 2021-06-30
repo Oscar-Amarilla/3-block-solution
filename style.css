@@ -1,0 +1,132 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+ background-color: hsl(0, 0%, 95%);
+}
+.content_frame{
+  /*Taking all the height of the screen*/
+  height: 100vh;
+  /*Organizing the content*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blocks{
+  display: flex;
+}
+.box{
+  /*Dimensions and positioning*/
+  width: 300px;
+  height: 500px;
+  position: relative;
+}
+/*Boxes aesthetics*/
+#sedans{
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 8px 0px 0px 8px;
+}
+#suv{
+  background-color: hsl(184, 100%, 22%);
+}
+#luxury{
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0px 8px 8px 0px;
+}
+.car_icon{
+  /*Positioning*/
+  position: relative;
+  top: 45px;
+  left: 48px;
+}
+.car_type{
+  /*Positioning*/
+  position: relative;
+  margin-left: 48px;
+  top: 70px;
+  /*Typography*/
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display";
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.car_description{
+  /*Positioning and style*/
+  position: relative;
+  top: 100px;
+  padding: 0px 41px 0px 48px;
+  /*Typography*/
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca";
+  font-size: 16px;
+  line-height: 26px;
+}
+.learn_button{
+  /*Position*/
+  position: absolute;
+  bottom: 48px;
+  left: 48px;
+  /*Dimentions and style*/
+  height: 50px;
+  width: 140px;
+  border-radius: 55px;
+  border: none;
+  /*Typography*/
+  font-family: "Lexend Deca";
+  font-size: 16px;
+}
+/*Typography color for every button*/
+#sedan_button{
+  color: hsl(31, 77%, 52%);
+}
+#suv_button{
+color: hsl(184, 100%, 22%);
+}
+#luxury_button{
+color: hsl(179, 100%, 13%);
+}
+/*Hoover esthetics*/
+#sedan_button:hover{
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+}
+#suv_button:hover{
+color: white;
+background-color: transparent;
+border: 2px solid white;
+}
+#luxury_button:hover{
+color: white;
+background-color: transparent;
+border: 2px solid white;
+}
+/*Movile version*/
+@media(max-width: 1024px){
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .content_frame{
+    height: auto;
+    margin: auto;
+  }
+  .blocks{
+    flex-direction: column;
+  }
+  .box{
+    height: 450px;
+  }
+  /*Boxes aesthetics*/
+  #sedans{
+    border-radius: 8px 8px 0px 0px;
+  }
+  #luxury{
+    border-radius: 0px 0px 8px 8px;
+  }
+  .car_description{
+    /*Positioning and style*/
+    top: 100px;
+  }
+}
