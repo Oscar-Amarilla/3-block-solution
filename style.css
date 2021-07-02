@@ -68,10 +68,11 @@ body{
   bottom: 48px;
   left: 48px;
   /*Dimentions and style*/
-  height: 50px;
-  width: 140px;
+  padding: 15px 30px;
   border-radius: 55px;
   border: none;
+  background-color: white;
+  text-decoration: none;
   /*Typography*/
   font-family: "Lexend Deca";
   font-size: 16px;
